@@ -2,7 +2,7 @@
 This repository contains a demo for the implementation of our open-search based distractor generation (Alg. 1 in the paper) to uncover model implicit biases.
 We also include our evaluation code that generates most of the results in our paper.
 
-Our work is to appear at EACL 2023.
+> Haozhe An, Zongxia Li, Jieyu Zhao, and Rachel Rudinger. SODAPOP: Open-Ended Discovery of Implicit Biases in Social Commonsense Reasoning Models. EACL 2023.
 
 ### Running the code
 Execute `demo.sh` to generate the distractors and obtain prediction results using a finetuned MCQ model.
