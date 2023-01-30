@@ -12,7 +12,7 @@ The code in `process_distractor_results.py` evaluates the generated distractors.
 Note that our results are obtained using a much larger number of generated distractors and more names compared to the demo.
 
 ### Dependencies
-Refer to `env.yml` in this folder. 
+Refer to `env.yml`. 
 
 ### Computing Infrastructure
 It is possible to run `generate_distractors.py` on CPUs only. 
@@ -45,7 +45,7 @@ In our experiments, we finetune the BERT MCQ with the training set of Social IQa
 We construct distractors and evaluate them using 50 contexts from the dev set.
 
 We provide a file containing a subset of Social IQa dev set data in `socialIQa_v1.4_dev_Bethany_0_2191.jsonl`.
-All samples in this file contain the names "Bethany", which is a random name.
+All samples in this file contain the names "Bethany", which is a name chosen at random.
 
 ### Pre-processing
 Before running Alg. 1 in the paper, we manually changed all gendered pronouns (e.g., he, she) to neutral pronoun (they).
