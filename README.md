@@ -7,7 +7,7 @@ Our work is to appear at EACL 2023.
 ### Running the code
 Execute `demo.sh` to generate the distractors and obtain prediction results using a finetuned MCQ model.
 Note that we do not provide the model checkpoint in the repository to avoid exceedingly large files.
-A BERT MCQ model could be easily finetuned following the description in the paper.
+A BERT MCQ model could be easily finetuned following the description in the paper, or you may download [our finetuned model here](https://drive.google.com/file/d/11bs_d-e_swpBLxjK7OdQH-Rhl5ZAJh51/view?usp=sharing).
 The code in `process_distractor_results.py` evaluates the generated distractors.
 Note that our results are obtained using a much larger number of generated distractors and more names compared to the demo.
 
