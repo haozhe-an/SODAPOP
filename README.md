@@ -1,16 +1,18 @@
-## Code for EACL 2023 Submission "SODAPOP: Open-Ended Discovery of Implicit Biases in Social Commonsense Reasoning Models"
-This folder contains a demo for the implementation of our open-search based distractor generation (Alg. 1 in the paper) to uncover model implicit biases.
+## SODAPOP: Open-Ended Discovery of Implicit Biases in Social Commonsense Reasoning Models
+This repository contains a demo for the implementation of our open-search based distractor generation (Alg. 1 in the paper) to uncover model implicit biases.
 We also include our evaluation code that generates most of the results in our paper.
+
+> Haozhe An, Zongxia Li, Jieyu Zhao, and Rachel Rudinger. SODAPOP: Open-Ended Discovery of Implicit Biases in Social Commonsense Reasoning Models. EACL 2023.
 
 ### Running the code
 Execute `demo.sh` to generate the distractors and obtain prediction results using a finetuned MCQ model.
-Note that we do not provide the model checkpoint in the supplementary submission to avoid exceedingly large files.
-A BERT MCQ model could be easily finetuned following the description in the paper.
+Note that we do not provide the model checkpoint in the repository to avoid exceedingly large files.
+A BERT MCQ model could be easily finetuned following the description in the paper, or you may download [our finetuned model here](https://drive.google.com/file/d/11bs_d-e_swpBLxjK7OdQH-Rhl5ZAJh51/view?usp=sharing).
 The code in `process_distractor_results.py` evaluates the generated distractors.
 Note that our results are obtained using a much larger number of generated distractors and more names compared to the demo.
 
 ### Dependencies
-Refer to `env.yml` in this folder. 
+Refer to `env.yml`. 
 
 ### Computing Infrastructure
 It is possible to run `generate_distractors.py` on CPUs only. 
@@ -43,7 +45,7 @@ In our experiments, we finetune the BERT MCQ with the training set of Social IQa
 We construct distractors and evaluate them using 50 contexts from the dev set.
 
 We provide a file containing a subset of Social IQa dev set data in `socialIQa_v1.4_dev_Bethany_0_2191.jsonl`.
-All samples in this file contain the names "Bethany", which is a random name.
+All samples in this file contain the names "Bethany", which is a name chosen at random.
 
 ### Pre-processing
 Before running Alg. 1 in the paper, we manually changed all gendered pronouns (e.g., he, she) to neutral pronoun (they).
