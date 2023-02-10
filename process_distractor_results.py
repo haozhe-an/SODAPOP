@@ -326,8 +326,7 @@ if __name__ == "__main__":
                 if np.sum(group1, axis=0)[i] == 0 or np.sum(group2, axis=0)[i] == 0:
                     continue
                 if diff != 0:
-                    vocab_to_relative_diff[v] = diff/np.average( [(np.sum(group1, axis=0)[i]), (np.sum(group2, axis=0)[i])] )
-                    vocab_to_relative_diff[v] /= len(group1)
+                    vocab_to_relative_diff[v] = diff/np.average( [(np.sum(group1, axis=0)[i])/len(group1), (np.sum(group2, axis=0)[i])/len(group2)] )
             sorted_vocab_to_relative_diff = dict(sorted(vocab_to_relative_diff.items(), key=lambda item: item[1]))
             
             # by default, it is sorted in ascending order
